@@ -49,7 +49,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(334, 12)
+        Me.Button2.Location = New System.Drawing.Point(291, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 2
@@ -61,9 +61,9 @@ Partial Class Form1
         Me.ListBox2.Font = New System.Drawing.Font("PMingLiU", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.ListBox2.FormattingEnabled = True
         Me.ListBox2.ItemHeight = 16
-        Me.ListBox2.Location = New System.Drawing.Point(334, 41)
+        Me.ListBox2.Location = New System.Drawing.Point(291, 41)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(399, 388)
+        Me.ListBox2.Size = New System.Drawing.Size(442, 388)
         Me.ListBox2.TabIndex = 3
         '
         'Form1

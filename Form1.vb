@@ -29,6 +29,10 @@
             lstPlain.Add(strSubstring)
             ListBox1.Items.Add(strSubstring)
         Next
+        lstPlain.Insert(0, "myfinxterpw")
+        ListBox1.Items.Insert(0, "myfinxterpw")
+        lstPlain.Insert(1, "finxter_freelancer")
+        ListBox1.Items.Insert(1, "finxter_freelancer")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -45,5 +49,19 @@
             lstDecoded.Add(objSimpleDes.Decrypt(str))
         Next
         ListBox2.DataSource = lstDecoded
+    End Sub
+
+    Private Sub ListBox1_MouseClick(sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListBox1.MouseDown
+        If (e.Button = MouseButtons.Right) Then
+            Diagnostics.Debug.WriteLine(ListBox1.Items(ListBox1.SelectedIndex).ToString())
+            Clipboard.SetText(ListBox1.Items(ListBox1.SelectedIndex).ToString())
+        End If
+    End Sub
+
+    Private Sub ListBox2_MouseClick(sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles ListBox2.MouseDown
+        If (e.Button = MouseButtons.Right) Then
+            Diagnostics.Debug.WriteLine(ListBox2.Items(ListBox2.SelectedIndex).ToString())
+            Clipboard.SetText(ListBox2.Items(ListBox2.SelectedIndex).ToString())
+        End If
     End Sub
 End Class
